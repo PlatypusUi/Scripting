@@ -14,10 +14,10 @@ args = parser.parse_args()
 # Fichier d'entrée
 fin = open(args.file, "r")
 # Ficher de sortie
-fout = open("f2.txt", "wt")
+fout = open("f2.txt", "w")
 # Regarde chaque ligne
 for line in fin:
-	# replacing the string and write to output file
+	# remplace les auccurrences
 	fout.write(line.replace(args.rechercher, (args.remplacer)))
 #ferme les fichiers
 fin.close()
